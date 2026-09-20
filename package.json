@@ -1,0 +1,11 @@
+{
+  "name": "craft-crumbs-ecommerce",
+  "version": "1.0.0",
+  "description": "Craft Crumbs - Artisanal Bakery & Patisserie Fullstack MERN E-Commerce",
+  "scripts": {
+    "server": "cd server && npm start",
+    "server:dev": "cd server && npm run dev",
+    "client": "cd client && npm run dev",
+    "seed": "cd server && npm run seed"
+  }
+}
