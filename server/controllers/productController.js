@@ -1,7 +1,5 @@
 import Product from '../models/Product.js';
 
-// @desc    Fetch all products with filtering, search, and sorting
-// @route   GET /api/products
 export const getProducts = async (req, res) => {
   try {
     const { category, search, dietary, sort, featured } = req.query;

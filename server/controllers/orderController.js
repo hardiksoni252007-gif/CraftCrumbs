@@ -1,7 +1,5 @@
 import Order from '../models/Order.js';
 
-// @desc    Get logged in customer's orders
-// @route   GET /api/orders/my-orders
 export const getMyOrders = async (req, res) => {
   try {
     const orders = await Order.find({ user: req.user._id })

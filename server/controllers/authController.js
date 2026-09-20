@@ -7,8 +7,6 @@ const generateToken = (id) => {
   });
 };
 
-// @desc    Register a new customer
-// @route   POST /api/auth/register
 export const registerUser = async (req, res) => {
   try {
     const { name, email, password, phone, address } = req.body;
@@ -48,8 +46,6 @@ export const registerUser = async (req, res) => {
   }
 };
 
-// @desc    Authenticate customer & get token
-// @route   POST /api/auth/login
 export const loginUser = async (req, res) => {
   try {
     const { email, password } = req.body;
@@ -93,8 +89,6 @@ export const getUserProfile = async (req, res) => {
   }
 };
 
-// @desc    Update user profile / address
-// @route   PUT /api/auth/profile
 export const updateUserProfile = async (req, res) => {
   try {
     const user = await User.findById(req.user._id);
