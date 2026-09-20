@@ -1,3 +1,12 @@
 SECRETS_SCAN_OMIT_KEYS = "PORT"
 SECRETS_SCAN_ENABLED = "false"
 SECRETS_SCAN_OMIT_PATHS = "node_modules"
+[build]
+  base = "client"          # Only build inside client/
+  command = "npm run build"
+  publish = "client/dist"  # Vite output folder
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
