@@ -12,7 +12,7 @@ import orderRoutes from './routes/orderRoutes.js';
 dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT;
 const MONGODB_URI = process.env.MONGODB_URI ;
 const allowedOrigins = (process.env.CLIENT_URL)
   .split(',')
